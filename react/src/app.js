@@ -1,20 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {  BrowserRouter as Router, Route, Link  } from 'react-router-dom';
+import AppBar from './components/app-bar';
+
+//-------------------------------------------
+// Screens
+//-------------------------------------------
+
+import Index from './screens/index';
+import About from './screens/about';
+
+//-------------------------------------------
+// Screens
+//-------------------------------------------
 
 const ROOT_ELEM = document.getElementById("index");
-
-class Index extends React.Component {
-    render(){
-        return (<div><h2>Hello React!</h2> <Link to='/about'>About</Link></div>);
-    }
-};
-
-class About extends React.Component {
-    render(){
-        return (<div>About React!</div>);
-    }
-};
 
 class App extends React.Component {
     render() {
